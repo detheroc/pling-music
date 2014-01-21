@@ -1,0 +1,35 @@
+body {
+    font-family: monospace;
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+div#main {
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+img#logo {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+p#subsonic {
+    background-color: #444444;
+    font-size: 0.8em;
+    border-radius: 0.4em;
+    padding: 0.8em;
+    color: #FFF;
+}
+
+p#subsonic a{
+    color: #ABABAB;
+}
