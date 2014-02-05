@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="common.appname">Superampify</string>
+    <string name="common.appname">Pling Music</string>
     <string name="common.ok">OK</string>
     <string name="common.continue">Continue</string>
     <string name="common.save">Save</string>
@@ -19,7 +19,7 @@
     <string name="button_bar.now_playing">PLAYER</string>
 
     <string name="main.welcome_title">Welcome!</string>
-    <string name="main.welcome_text">Welcome to Superampify! The app is currently configured to use a Runners-ID demo account. After you\'ve
+    <string name="main.welcome_text">Welcome to Pling Music! The app is currently configured to use a Runners-ID demo account. After you\'ve
         set up your personal account (available from <b>runners-id.com</b>), please go to <b>Settings</b> and change the configuration to connect to it.</string>
     <string name="main.select_server">Select server</string>
     <string name="main.shuffle">Shuffle play</string>
@@ -43,7 +43,7 @@
     <string name="playlist.label">Playlists</string>
 
     <string name="help.label">Help</string>
-    <string name="help.title">Welcome to Superampify!</string>
+    <string name="help.title">Welcome to Pling Music!</string>
     <string name="help.back">Back</string>
     <string name="help.close">Close</string>
     <string name="help.url">file:///android_asset/html/en/index.html</string>
@@ -243,7 +243,7 @@
     </plurals>
     
     <string name="subtunes.settings.account_title">Account</string>
-    <string name="subtunes.settings.title">Superampify settings</string>
+    <string name="subtunes.settings.title">Pling Music settings</string>
     <string name="subtunes.main.select_account">Account</string>
     <string name="subtunes.demo_account_name">Demo</string>
     <string name="subtunes.my_account_name">My Account</string>

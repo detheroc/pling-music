@@ -129,7 +129,7 @@ public class FileUtil {
     }
 
     public static File getSubsonicDirectory() {
-        return new File(Environment.getExternalStorageDirectory(), "subtunes");
+        return new File(Environment.getExternalStorageDirectory(), "pling-music");
     }
 
     public static File getDefaultMusicDirectory() {
