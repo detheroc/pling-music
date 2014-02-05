@@ -25,8 +25,7 @@ import it.pling.music.android.R;
 public class AccountActivity extends Activity {
 	
 	private static final String TAG = AccountActivity.class.getSimpleName();
-	
-	private Button DemoButton;
+
 	private Button SignInButton;
 	private Button OfflineButton;
 	private Button HelpButton;
@@ -57,24 +56,14 @@ public class AccountActivity extends Activity {
     
     public void initAccountActivity() {
     	setContentView(R.layout.account);
-        
-        DemoButton = (Button) findViewById(R.id.account_demo_button);
+
         SignInButton = (Button) findViewById(R.id.account_signin_button);
         OfflineButton = (Button) findViewById(R.id.account_offline_button);
         HelpButton = (Button) findViewById(R.id.account_help_button);
         
         UsernameEditText = (EditText) findViewById(R.id.account_username_edittext);
         PasswordEditText = (EditText) findViewById(R.id.account_password_edittext);
-        
-        DemoButton.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				configureDemo();
-				launchSubsonic(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
-			}
-		});
-        
+
         SignInButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -116,10 +105,6 @@ public class AccountActivity extends Activity {
     	Intent intent = new Intent(AccountActivity.this, MainActivity.class);
     	intent.setFlags(flags);
     	startActivity(intent);
-    }
-    
-    public void configureDemo() {
-    	Util.setActiveServer(AccountActivity.this, 1);
     }
     
     private void testConnection(final int instance) {
