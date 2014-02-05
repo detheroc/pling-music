@@ -119,6 +119,7 @@ public class RESTMusicService implements MusicService {
     // Allow 20 seconds extra timeout per MB offset.
     private static final double TIMEOUT_MILLIS_PER_OFFSET_BYTE = 20000.0 / 1000000.0;
 
+    private static final boolean DISABLE_REDIRECT = true;
     /**
      * URL from which to fetch latest versions.
      */
@@ -768,6 +769,9 @@ public class RESTMusicService implements MusicService {
         if (redirectFrom == null || redirectTo == null) {
             return url;
         }
+
+        if (DISABLE_REDIRECT)
+            return url;
 
         return url.replace(redirectFrom, redirectTo);
     }
