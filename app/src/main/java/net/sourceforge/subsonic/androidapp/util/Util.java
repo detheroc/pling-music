@@ -238,23 +238,19 @@ public final class Util {
         SharedPreferences prefs = getPreferences(context);
 
         int instance = prefs.getInt(Constants.PREFERENCES_KEY_SERVER_INSTANCE, 1);
-        String serverUrl = "http://ppload.com/api/subsonic/";
+        String serverUrl = "http://pling.to/subsonic/rest/";
         String username = prefs.getString(Constants.PREFERENCES_KEY_USERNAME + instance, null);
         String password = prefs.getString(Constants.PREFERENCES_KEY_PASSWORD + instance, null);
-
-        // Slightly obfuscate password
-        password = "enc:" + Util.utf8HexEncode(password);
 
         builder.append(serverUrl);
         if (builder.charAt(builder.length() - 1) != '/') {
             builder.append("/");
         }
         builder.append(method).append(".view");
-        builder.append("?u=").append("69");//append(username);
-        builder.append("&p=").append("foobar");//append(password);
+        builder.append("?u=").append(username);
+        builder.append("&p=").append(password);
         builder.append("&v=").append(Constants.REST_PROTOCOL_VERSION);
-        builder.append("&c=").append("1387065333");//append(Constants.REST_CLIENT_ID);
-
+        builder.append("&c=").append(Constants.REST_CLIENT_ID);
         return builder.toString();
     }
 
