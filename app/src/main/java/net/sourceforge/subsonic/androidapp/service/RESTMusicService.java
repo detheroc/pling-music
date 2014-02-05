@@ -120,6 +120,8 @@ public class RESTMusicService implements MusicService {
     private static final double TIMEOUT_MILLIS_PER_OFFSET_BYTE = 20000.0 / 1000000.0;
 
     private static final boolean DISABLE_REDIRECT = true;
+    private static final String AUTH_HEADER = "Basic Your_base64_encoded_username:password";
+
     /**
      * URL from which to fetch latest versions.
      */
@@ -691,13 +693,8 @@ public class RESTMusicService implements MusicService {
                 }
             }
 
-            // Set credentials to get through apache proxies that require authentication.
-            SharedPreferences prefs = Util.getPreferences(context);
-            int instance = prefs.getInt(Constants.PREFERENCES_KEY_SERVER_INSTANCE, 1);
-            String username = prefs.getString(Constants.PREFERENCES_KEY_USERNAME + instance, null);
-            String password = prefs.getString(Constants.PREFERENCES_KEY_PASSWORD + instance, null);
-            httpClient.getCredentialsProvider().setCredentials(new AuthScope(AuthScope.ANY_HOST, AuthScope.ANY_PORT),
-                    new UsernamePasswordCredentials(username, password));
+            if (AUTH_HEADER != null)
+                request.addHeader(new BasicHeader("Authorization", AUTH_HEADER));
 
             try {
                 Log.i(TAG, "Shit is: " + request.getMethod());
