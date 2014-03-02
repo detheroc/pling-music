@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="widget_min_width">250dip</dimen>
     <dimen name="widget_min_height">40dip</dimen>
     <dimen name="widget_album_art_size">48dip</dimen>
@@ -7,4 +8,8 @@
     <dimen name="widget_button_padding">8dip</dimen>
     <dimen name="widget_text_padding_top">5dip</dimen>
     <dimen name="widget_margin">8dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
 </resources>

@@ -23,13 +23,13 @@
             <EditTextPreference
                     android:key="username1"
                     android:title="@string/settings.server_username"
-                    android:defaultValue="androidguest"/>
+                    android:defaultValue="dummy@dummy.de"/>
 
             <EditTextPreference
                     android:key="password1"
                     android:title="@string/settings.server_password"
                     android:password="true"
-                    android:defaultValue="androidpassword"
+                    android:defaultValue="dummy"
                     android:summary="****"/>
 
             <Preference

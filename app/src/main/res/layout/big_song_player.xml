@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="3dip"
+        android:paddingBottom="10dip"
+        android:layout_gravity="center">
+
+        <TextView
+            android:text="Foo Song"
+            android:id="@+id/big_player_song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:text="by Foo Artist"
+            android:id="@+id/big_player_song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true"
+            android:paddingLeft="10dip"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/big_player_coverart"
+            android:src="@drawable/unknown_album"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:paddingTop="1dip"
+            android:paddingBottom="1dip"/>
+        <ImageButton
+            style="@style/WidgetButton"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:id="@+id/big_player_play"
+            android:src="@drawable/media_start"
+            android:layout_gravity="center"/>
+        <ImageButton
+            style="@style/WidgetButton"
+            android:id="@+id/big_player_pause"
+            android:src="@drawable/media_pause"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

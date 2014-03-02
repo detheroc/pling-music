@@ -12,12 +12,10 @@
     <string name="common.pin">Pin</string>
     <string name="common.unpin">Unpin</string>
     <string name="common.delete">Delete</string>
-
     <string name="button_bar.home">HOME</string>
     <string name="button_bar.browse">LIBRARY</string>
     <string name="button_bar.playlists">PLAYLISTS</string>
     <string name="button_bar.now_playing">PLAYER</string>
-
     <string name="main.welcome_title">Welcome!</string>
     <string name="main.welcome_text">Welcome to Pling Music! The app is currently configured to use a Runners-ID demo account. After you\'ve
         set up your personal account (available from <b>runners-id.com</b>), please go to <b>Settings</b> and change the configuration to connect to it.</string>
@@ -35,23 +33,18 @@
     <string name="main.albums_frequent">Most played</string>
     <string name="main.albums_highest">Top rated</string>
     <string name="main.albums_random">Random</string>
-
     <string name="menu.exit">Exit</string>
     <string name="menu.settings">Settings</string>
     <string name="menu.help">Help</string>
-
     <string name="playlist.label">Playlists</string>
-
     <string name="help.label">Help</string>
     <string name="help.title">Welcome to Pling Music!</string>
     <string name="help.back">Back</string>
     <string name="help.close">Close</string>
     <string name="help.url">file:///android_asset/html/en/index.html</string>
     <string name="help.loading">Loading…</string>
-
     <string name="play_video.loading">Loading video…</string>
     <string name="play_video.noplugin">Please install Adobe Flash Player from Android Market.</string>
-
     <string name="search.label">Search</string>
     <string name="search.title">Search</string>
     <string name="search.search">Click to search</string>
@@ -60,10 +53,8 @@
     <string name="search.albums">ALBUMS</string>
     <string name="search.songs">SONGS</string>
     <string name="search.more">Show more</string>
-
     <string name="music_library.label">Media library</string>
     <string name="music_library.label_offline">Offline media</string>
-
     <string name="select_album.empty">No media found</string>
     <string name="select_album.select">Select all</string>
     <string name="select_album.n_selected">%d tracks selected.</string>
@@ -78,9 +69,7 @@
     <string name="select_album.donate_dialog_now">Now</string>
     <string name="select_album.donate_dialog_later">Later</string>
     <string name="select_album.donate_dialog_0_trial_days_left">Trial period is over</string>
-
     <string name="select_playlist.empty">No saved playlists on server</string>
-
     <string name="download.empty">Play queue is empty</string>
     <string name="download.playerstate_downloading">Downloading - %s</string>
     <string name="download.playerstate_buffering">Buffering</string>
@@ -113,15 +102,11 @@
     <string name="download.jukebox_volume">Remote volume</string>
     <string name="download.jukebox_server_too_old">Remote control is not supported. Please upgrade your Subsonic server.</string>
     <string name="download.jukebox_offline">Remote control is not available in offline mode.</string>
-    <string name="download.jukebox_not_authorized">Remote control is not allowed. Please enable jukebox mode in <b>Users &gt; Settings</b> on your Subsonic server.</string>
-
+    <string name="download.jukebox_not_authorized">Remote control is not allowed. Please enable jukebox mode in <b>Users > Settings</b> on your Subsonic server.</string>
     <string name="song_details.all">%1$s %2$s</string>
     <string name="song_details.kbps">%d kbps</string>
-
     <string name="lyrics.nomatch">No lyrics found</string>
-
     <string name="error.label">Error</string>
-
     <string name="settings.title">Subsonic settings</string>
     <string name="settings.test_connection_title">Test connection</string>
     <string name="settings.servers_title">Servers</string>
@@ -186,18 +171,14 @@
     <string name="settings.media_button_summary">Respond to phone, headset and Bluetooth media buttons</string>
     <string name="settings.screen_lit_title">Keep screen on</string>
     <string name="settings.screen_lit_summary">Keeping the screen on while downloading improves download speed.</string>
-
     <string name="music_service.retry">A network error occurred. Retrying %1$d of %2$d.</string>
-
     <string name="background_task.wait">Please wait…</string>
     <string name="background_task.loading">Loading.</string>
     <string name="background_task.no_network">This program requires network access. Please turn on Wi-Fi or mobile network.</string>
     <string name="background_task.network_error">A network error occurred. Please check the server address or try again later.</string>
     <string name="background_task.not_found">Resource not found. Please check the server address.</string>
     <string name="background_task.parse_error">Didn\'t understand the reply. Please check the server address.</string>
-
     <string name="service.connecting">Contacting server, please wait.</string>
-
     <string name="parser.reading">Reading from server.</string>
     <string name="parser.reading_done">Reading from server. Done!</string>
     <string name="parser.upgrade_client">Incompatible versions. Please upgrade Subsonic Android app.</string>
@@ -205,20 +186,16 @@
     <string name="parser.not_authenticated">Wrong username or password.</string>
     <string name="parser.not_authorized">Not authorized. Check user permissions in Subsonic server.</string>
     <string name="parser.artist_count">Got %d artists.</string>
-
     <string name="select_artist.refresh">Refresh</string>
     <string name="select_artist.folder">Select folder</string>
     <string name="select_artist.all_folders">All folders</string>
-
     <string name="equalizer.label">Equalizer</string>
     <string name="equalizer.on">Equalizer on</string>
     <string name="equalizer.off">Equalizer off</string>
     <string name="equalizer.preset">Select preset</string>
-
     <string name="widget.initial_text">Touch to select music</string>
     <string name="widget.sdcard_busy">SD card unavailable</string>
     <string name="widget.sdcard_missing">No SD card</string>
-
     <string name="util.bytes_format.gigabyte">0.00 GB</string>
     <string name="util.bytes_format.megabyte">0.00 MB</string>
     <string name="util.bytes_format.kilobyte">0 KB</string>
@@ -241,7 +218,7 @@
         <item quantity="one">One day left of trial period</item>
         <item quantity="other">%d days left of trial period</item>
     </plurals>
-    
+
     <string name="subtunes.settings.account_title">Account</string>
     <string name="subtunes.settings.title">Pling Music settings</string>
     <string name="subtunes.main.select_account">Account</string>
@@ -258,5 +235,5 @@
     <string name="subtunes.common.unpin">Unpin</string>
     <string name="subtunes.common.delete">Remove from local memory</string>
     <string name="subtunes.my_account">Account</string>
-
+    <string name="title_activity_showcase">ShowcaseActivity</string>
 </resources>
